@@ -1,0 +1,57 @@
+            .item-react{
+                padding: 5px 5px 0px 5px;
+                border: 1px solid black;
+                border-radius: 0px 0px 0px 0px;
+                position: relative;
+                list-style: none;
+                text-decoration: none;
+                color: #00467f;
+                background: #F76b46;   
+                font-family: 'Oswald', Arial, sans-serif !important;                                
+            }
+            .item-reactTempStyle{
+                padding: 5px 5px 0px 5px;
+                border: 1px solid black;
+                border-radius: 10px 10px 0px 0px;
+                position: relative;
+                border-bottom-width:0px 
+            }           
+           
+            .item-react-over{
+                list-style: none;
+                text-decoration: none;
+                color: white;
+                background: #00467f;                                
+            }    
+
+
+
+            .item-react-clicked {
+                list-style: none;
+                text-decoration: none;
+                color: white;
+                background: #00467f;
+                border-bottom-width:0px; 
+            } 
+
+            .btn-react{
+                    display: block;
+                    margin: 5px 0px;
+                    background: #F76b46;
+                    color: #00467f;
+                    font-family: oswald;
+                    border: 1px solid #00467f;
+                    box-shadow: none;
+                    font-size: 16px;
+                    padding: 2px 13px;
+
+            }
+            .center-aling{
+                text-align: center;
+            }
+            .btn-react-disabled{
+                background: #8C8887;
+            }
+            .red-text{
+                color:red !important;
+            }
