@@ -37,14 +37,14 @@ gulp.task('build', function() {
 
 gulp.task('builEC6', function() { 
     var bundler = browserify({
-        entries: ['./components/componentsE6.jsx'], // Only need initial file, browserify finds the deps
+        entries: ['./components/index.jsx'], // Only need initial file, browserify finds the deps
         extensions: ['.jsx'],
         //transform: [babelify], // We want to convert JSX to normal javascript
         debug: true, // Gives us sourcemapping
         //cache: {}, packageCache: {}, fullPaths: true // Requirement of watchify
     });
   return bundler
-  .transform(babelify)
+  .transform(babelify,{presets: ["es2015", "react"]})
   .bundle()
   .pipe(source('contact.js'))
   .pipe(gulp.dest('./build/js'))
@@ -84,7 +84,7 @@ gulp.task('buildMembers', function() {
 
 gulp.task('watch', function() {  
 
-  gulp.watch('./**/*.jsx', ['build-contact'])
+  gulp.watch('./**/*.jsx', ['builEC6'])
 
 })
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 class MyComp extends React.Component {  
   render() {
@@ -7,4 +8,4 @@ class MyComp extends React.Component {
   }
 }
 
-React.render(<MyComp />, document.getElementById('form-contact-react'))
+ReactDOM.render(<MyComp />, document.getElementById('form-contact-react'))
